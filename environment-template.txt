@@ -1,0 +1,26 @@
+# Environment Variables Template for AWS Cognito Integration
+# Copy this file to .env or configure these in your Lambda environment
+
+# AWS Cognito Configuration
+COGNITO_USER_POOL_ID=your-user-pool-id-here
+COGNITO_CLIENT_ID=your-client-id-here
+AWS_REGION=us-east-1
+
+# DynamoDB Configuration
+DYNAMODB_TABLE_NAME=docshield-users
+
+# Example configuration for different environments:
+
+# Development
+# COGNITO_USER_POOL_ID=us-east-1_aBc123DeF
+# COGNITO_CLIENT_ID=123456789abcdefghijklmnop
+
+# Production  
+# COGNITO_USER_POOL_ID=us-east-1_XyZ789GhI
+# COGNITO_CLIENT_ID=987654321zyxwvutsrqponml
+
+# Notes:
+# 1. These environment variables must be set in your Lambda function configuration
+# 2. The COGNITO_USER_POOL_ID can be found in your Cognito User Pool settings
+# 3. The COGNITO_CLIENT_ID is the App Client ID from your User Pool
+# 4. AWS_REGION should match where your Cognito User Pool is deployed

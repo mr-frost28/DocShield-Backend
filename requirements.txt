@@ -1,0 +1,14 @@
+# AWS SDK for Python
+boto3>=1.26.0
+
+# JWT processing
+PyJWT[crypto]>=2.6.0
+
+# HTTP requests for Cognito public key fetching
+requests>=2.28.0
+
+# For cryptographic operations
+cryptography>=3.4.8
+
+# JSON Web Key processing
+python-jose[cryptography]>=3.3.0
